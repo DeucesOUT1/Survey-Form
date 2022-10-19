@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>Tell us who you are</h1>
+    <p id="description">Don't be afraid of expressing who you are no matter what anyone says!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+      <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+      <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com">
+            <br>
+            <br>
+      <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
+             </div>
+<br>
+     <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>How Do you Identify? </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="Les">Lesbian</option>
+                <option value="Gay">Gay</option>
+                <option value="Bi">Bi-sexual</option>
+                <option value="Tfem">Trans-Fem</option>
+                <option value="Tmale">Trans-male</option>
+                <option value="Q">Queer</option>
+                <option value="inter">Intersex</option>
+                <option value="Asex">Asexual</option>
+                <br>
+            <label id="other-specify"><b>other</b></label>
+            <input id="other" type="other" name="other" class="form" required placeholder="other - specify"><br>
+               
+            </select>
+         </div>
+         
+     <div id="button-area">
+             <br>
+            <label id="pronouns"><b>Pronouns:</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="She" checked>Female pronouns(she/her)<br>
+            <input type="radio" class="radio-inline" name="gender" value="He"> Male pronouns(He/Him/His)<br>
+            <input type="radio" class="radio-inline" name="gender" value="neutral"> Gender Neutral(they/them/their)<br>
+          </div>
+          
+          <div id="button-area"><br>
+            <label id="Rel-Status"><b>Relationship Status: </b></label><br>
+            <input type="checkbox" name="single" value="windows" checked>Single<br>
+            <input type="checkbox" name="mono" value="linux">Monogamous Relationship<br>
+            <input type="checkbox" name="non-mono" value="linux">Non-Monogamous (Open) Relationship<br>
+            <input type="checkbox" name="poly" value="mac">Polyamorous (Multi) Relationship<br>
+          </div>
+          <label id="textarea" placeholder="other - specify">Suggestions:</label>
+          <br>
+          <textarea id="textarea" name="Sugegestions"rows="5" cols="50.5">
+          </textarea>
+          <br>
+          
+          <input id="submit" type="submit" value="Submit" class="submit-button">
+          
+  </body>  
+</html>
